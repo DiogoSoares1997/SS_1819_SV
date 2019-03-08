@@ -12,7 +12,7 @@ alpha = -pi;
 t = 0:1.2500e-04:0.008;
 
 %[z] = my_sinc(A,B,C,t);
-[x,y ] = my_sinusoid( A,f0,t, alpha );
+[x,y] = my_sinusoid(A,B,f0,t,alpha);
 
 figure (1)
 plot (t,x)
@@ -29,13 +29,13 @@ f0 = 500;
 alpha = 0;
 t = 0:1.2500e-04:0.008;
 
-[x,y] = my_sinusoid(A,f0,t,alpha);
+[x,y] = my_sinusoid(A,B,f0,t,alpha);
 figure (3)
 plot (t,x)
 figure (4)
 plot (t,y)
 
-%% sinal Z exercicio 1 b)
+%% sinal Z exercicio 1 a)
 
 %i)
 
@@ -48,6 +48,7 @@ t = -10:0.1:10;
 
 figure (5)
 plot(t,z)
+grid on
 
 %% sinal Z exercicio 1 b)
 
