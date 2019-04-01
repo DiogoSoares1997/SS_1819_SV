@@ -16,11 +16,10 @@ title('Sinal à saída da multiplicação (c(t))')
 xlabel('Tempo (s)')
 ylabel('Amplitude')
 figure(2)
-
-plot(t,e)
 title('Sinal à saída da adição da componente constante (e(t))')
 xlabel('Tempo (s)')
 ylabel('Amplitude')
+plot(t,e)
 
 %% Exercicio 3 Sistema S a) ii
 
@@ -38,11 +37,7 @@ title('Sinal à saída da multiplicação (c(t))')
 xlabel('Tempo (s)')
 ylabel('Amplitude')
 figure(4)
-
 plot(t,e)
-title('Sinal à saída da adição da componente constante (e(t))')
-xlabel('Tempo (s)')
-ylabel('Amplitude')
 
 %% Exercicio 3 Sistema S a) iii
 
@@ -56,12 +51,5 @@ d = 1;
 
 figure(5)
 plot(t,c)
-title('Sinal à saída da multiplicação (c(t))')
-xlabel('Tempo (s)')
-ylabel('Amplitude')
 figure(6)
-
 plot(t,e)
-title('Sinal à saída da adição da componente constante (e(t))')
-xlabel('Tempo (s)')
-ylabel('Amplitude')
