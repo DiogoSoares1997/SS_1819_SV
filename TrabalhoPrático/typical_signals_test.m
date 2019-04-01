@@ -70,13 +70,14 @@ t = -10:0.1:2;
 [z] = my_sinc(A,B,C,t);
 
 figure (5)
+subplot(2,1,1);
 plot(t,z)
 title('Sinal z(t) com A=6; B=2; C=8;')
 xlabel('Tempo (t)')
 ylabel('Amplitude (A)')
 grid on
 
-%% sinal Z exercicio 1 b)
+% sinal Z exercicio 1 b)
 
 %ii)
 
@@ -86,7 +87,9 @@ C = 2;
 t = -18:0.1:10;
 
 [z] = my_sinc(A,B,C,t);
-figure (6)
+%figure (6)
+subplot(2,1,2);
+
 plot(t,z)
 xlim([-18 10]);
 title('Sinal z(t) com A=-4; B=0.5; C=2;')
