@@ -50,7 +50,7 @@ plot(t,x2);
 
 figure (6)
 plot(t,y2);
-%% c) Terminado
+%% c) Modulo do espetro de amplitude
 
 [freq, CK] = timeTofrequency( x, fs );
 figure (7)
