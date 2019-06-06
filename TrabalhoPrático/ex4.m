@@ -10,7 +10,7 @@ fs=8000;
 dur= 3*(1/f0);
 t=0:1/fs:dur;
 xsomatorio=0;
-for k=1:N;
+for k=1:2:N;
     xsomatorio = xsomatorio + (my_sinc(d,k,0,d)*cos(2*pi*k*f0*t));
 end
 
