@@ -195,46 +195,76 @@ fs = 32000;
 [freq, CK] = timeTofrequency(x7,fs);
 
 figure(13)
+subplot(1,2,1)
 plot(freq,abs(CK))
-title('Espetro de Amplitude e de fase da mySquareWave 7 harmónicas ')
+title('Espetro de Amplitude da mySquareWave 7 harmónicas ');
+grid on;
+subplot(1,2,2)
+plot(freq,angle(CK),'o')
+title('Espetro de Fase da mySquareWave 7 harmónicas');
 grid on;
 %% mySquareWave 14 harmónicas 0.5 duty-cycle
 fs = 32000;
 [freq, CK] = timeTofrequency(x14,fs);
 
 figure(14)
+subplot(1,2,1)
 plot(freq,abs(CK))
-title('Espetro de Amplitude e de fase da mySquareWave 14 harmónicas ')
+title('Espetro de Amplitude da mySquareWave 14 harmónicas ');
 grid on;
+subplot(1,2,2)
+plot(freq,angle(CK))
+title('Espetro de fase da mySquareWave 14 harmónicas');
+grid on;
+
 %% mySquareWave 22 harmónicas 0.5 duty-cycle
 fs = 32000;
 [freq, CK] = timeTofrequency(x22,fs);
 
 figure(15)
+subplot(1,2,1)
 plot(freq,abs(CK))
-title('Espetro de Amplitude e de fase da mySquareWave 22 harmónicas ')
+title('Espetro de Amplitude da mySquareWave 22 harmónicas ')
+subplot(1,2,2)
+plot(freq,angle(CK))
+title('Espetro de fase da mySquareWave 22 harmónicas');
 grid on;
 %% myTriangularWave 7 harmónicas
 fs = 16000;
 [freq, CK] = timeTofrequency(xt7,fs);
 
 figure(16)
+subplor(1,2,1)
 plot(freq,abs(CK))
 title('Espetro de Amplitude e de fase da myTriangularWave 7 harmónicas ')
+grid on;
+subplot(1,2,2)
+plot(freq,angle(CK))
+title('Espetro de Fase da myTriangularWave 7 harmónicas')
 grid on;
 %% myTriangularWave 14 harmónicas
 fs = 16000;
 [freq, CK] = timeTofrequency(xt14,fs);
 
 figure(17)
+subplot(1,2,1)
 plot(freq,abs(CK))
-title('Espetro de Amplitude e de fase da myTriangularWave 14 harmónicas ')
+title('Espetro de Amplitude da myTriangularWave 14 harmónicas ')
+grid on;
+subplot(1,2,2)
+plot(freq,angle(CK))
+title('Espetro de Fase da myTriangularWave 14 harmónicas')
 grid on;
 %% myTriangularWave 22 harmónicas
 fs = 16000;
 [freq, CK] = timeTofrequency(xt22,fs);
 
 figure(18)
+subplot(1,2,1)
 plot(freq,abs(CK))
-title('Espetro de Amplitude e de fase da myTriangularWave 22 harmónicas ')
+title('Espetro de Amplitude da myTriangularWave 22 harmónicas ')
+grid on;
+subplot(1,2,2)
+plot(freq,angle(CK))
+title('Espetro de Fase da myTriangularWave 22 harmónicas')
 grid on;
